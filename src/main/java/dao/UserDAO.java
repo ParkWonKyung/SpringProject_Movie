@@ -53,6 +53,8 @@ public class UserDAO {
 		map.put("pwd", pwd);
 		
 		vo = sqlSession.selectOne("u.user_one", map);
+		System.out.println("vo : " + vo);
+
 		return vo;
 	}
 	
